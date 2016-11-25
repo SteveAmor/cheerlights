@@ -11,6 +11,7 @@ while True:
     except:
         col = "Error!"
 
+    scrollphat.clear()
     scrollphat.write_string(col,11)
     length = scrollphat.buffer_len()
     for i in range(length):
