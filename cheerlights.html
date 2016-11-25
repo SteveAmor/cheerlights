@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Cheerlights</title>
+  </head>
+  <body>
+    <script>
+      setInterval(function() {
+        // get cheerlights color from field2 with a webservice call
+        $.getJSON('https://api.thingspeak.com/channels/1417/feed/last.json?callback=?', function (data) {
+        // if the field2 has data, update background color of the page
+          if (data.field2) {
+            $("body").css("background-color", data.field2);
+          }
+        });
+      }, 1000);
+    </script>
+  </body>
+</html>
+
