@@ -1,10 +1,10 @@
 # Cheerlights
 
-For:
+Continuous updates for:
 
 - Pimoroni blinkt
 - Pimoroni microdot phat
 - Pimoroni scroll phat
 - Sense Hat
-- HTML for web browser
+- Web browser
 
