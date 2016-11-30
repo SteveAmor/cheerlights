@@ -32,14 +32,16 @@ python /home/pi/cheerlights/candle-cheerlights.py &
 
 Ensure ```/boot/config.txt``` has the following line in it
 
-```dtoverlay=lirc\-rpi,gpio\_out\_pin=14```
+```
+dtoverlay=lirc\-rpi,gpio\_out\_pin=14
+```
 
 Ensure ```/etc/lirc/hardware\.conf``` contains the following
 
 ```
-LIRCD_ARGS="\-\-uinput"
-#START_LIRCMD=false
-#START_IREXEC=false
+LIRCD\_ARGS="\-\-uinput"
+#START\_LIRCMD=false
+#START\_IREXEC=false
 LOAD\_MODULES=true
 DRIVER="default"
 DEVICE="/dev/lirc0"
