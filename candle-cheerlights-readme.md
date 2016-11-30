@@ -52,9 +52,9 @@ LIRCMD\_CONF=""
 
 ##Hardware
 
-*Raspberry Pi.
-*IR LED (5mm 940nm).
-*330 ohm resistor (0.25 watt).
+* Raspberry Pi.
+* IR LED (5mm 940nm).
+* 330 ohm resistor (0.25 watt).
 
 Long leg of IR LED to 330ohm resistor to GPIO14
 
