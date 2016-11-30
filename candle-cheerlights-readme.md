@@ -8,7 +8,7 @@ Mood candles are available in high street stores (Lakeland for example) and on e
 
 ![Remote Control](/images/remote.jpg)
 
-In this project, the remote control has been replaced by a Raspberry Pi running lirc to change the colour of the candles based on the latest Cheerlights colour.
+In this project, the remote control has been replaced by a Raspberry Pi running [lirc](http://www.lirc.org/) to change the colour of the candles based on the latest [Cheerlights](http://cheerlights.com) colour.
 
 ![Raspberry Pi](/images/pi.jpg)
 
