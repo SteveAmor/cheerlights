@@ -7,4 +7,4 @@ Continuous updates for:
 - Pimoroni scroll phat
 - Sense Hat
 - Web browser
-
+- Mood candles
