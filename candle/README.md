@@ -1,16 +1,16 @@
 # Mood Candle Cheerlights
 
-![Candles](/images/candles.jpg)
+![Candles](images/candles.jpg)
 
 ## Introduction
 
 Mood candles are available in high street stores (Lakeland for example) and on eBay.  They have a simple infrared remote control that looks likes this:
 
-![Remote Control](/images/remote.jpg)
+![Remote Control](images/remote.jpg)
 
 In this project, the remote control has been replaced by a Raspberry Pi running [lirc](http://www.lirc.org/) to change the colour of the candles based on the latest [Cheerlights](http://cheerlights.com) colour.
 
-![Raspberry Pi](/images/pi.jpg)
+![Raspberry Pi](images/pi.jpg)
 
 ## Installing lirc
 
