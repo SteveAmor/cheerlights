@@ -21,7 +21,7 @@ cd
 sudo apt-get update
 sudo apt-get install lirc
 git clone https://github.com/steveamor/cheerlights.git
-sudo cp ~/cheerlights/lircd.conf /etc/lirc/
+sudo cp ~/cheerlights/candle/lircd.conf /etc/lirc/
 ```
 
 Update ```/etc/rc.local``` with the following three lines before ```exit 0```
@@ -29,7 +29,7 @@ Update ```/etc/rc.local``` with the following three lines before ```exit 0```
 ```
 ln -s /dev/lirc0 /dev/lirc # this is the hack that fixes the "hardware does not support sending" error
 lircd &
-python /home/pi/cheerlights/candle-cheerlights.py &
+python /home/pi/cheerlights/candle/candle-cheerlights.py &
 ```
 
 Ensure ```/boot/config.txt``` has the following line in it
