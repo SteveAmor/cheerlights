@@ -1,4 +1,4 @@
-# Cheerlights
+# Cheerlights projects for a Raspberry Pi
 
 Continuous updates for:
 
