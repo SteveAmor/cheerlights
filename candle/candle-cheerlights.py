@@ -36,6 +36,6 @@ while True:
         subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_10"])
     elif(col == "cyan"):
         subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_11"])
-    elif(col == "megenta"):
+    elif(col == "magenta"):
         subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_12"])
     time.sleep(1)
