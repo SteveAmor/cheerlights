@@ -4,9 +4,17 @@ import time
 import requests
 import subprocess
 
-col = "white"
+def press(button):
+    if "previousButton" not in vars(press):
+        press.previousButton = ""
+    if(press.previousButton != button):
+        press.previousButton = button
+        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", button])
 
-subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "BTN_1"])
+press("BTN_1") # Turn on
+time.sleep(1)
+
+col = "white"
 
 while True:
     try:
@@ -19,23 +27,24 @@ while True:
             col = "white"
 
     if(col == "red"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_1"])
+        press("KEY_1")
     elif(col == "green"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_2"])
+        press("KEY_2")
     elif(col == "blue"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_3"])
+        press("KEY_3")
     elif(col == "white" or col == "warmwhite" or col == "oldlace"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_4"])
+        press("KEY_4")
     elif(col == "orange"): # ok, it's not orange but we need something
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_6"])
+        press("KEY_6")
     elif(col == "yellow"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_7"])
+        press("KEY_7")
     elif(col == "purple"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_9"])
+        press("KEY_9")
     elif(col == "pink"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_10"])
+        press("KEY_10")
     elif(col == "cyan"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_11"])
+        press("KEY_11")
     elif(col == "magenta"):
-        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "KEY_12"])
+        press("KEY_12")
+
     time.sleep(1)
