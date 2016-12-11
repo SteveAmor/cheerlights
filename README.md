@@ -8,3 +8,4 @@ Continuous updates for:
 - Sense Hat
 - Web browser
 - Mood candles
+- RGB LED
