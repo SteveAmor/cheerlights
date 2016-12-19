@@ -10,7 +10,7 @@ col = "#000000"
 
 while True:
     try:
-        r = requests.get('http://api.thingspeak.com/channels/1417/field/2/last.json')
+        r = requests.get('http://api.thingspeak.com/channels/1417/field/2/last.json', timeout=2)
         col = r.json()['field2']
     except:
         if col == "#000000":

@@ -7,7 +7,7 @@ from microdotphat import write_string, show
 while True:
     try:
         print("Get web request")
-        r = requests.get('http://api.thingspeak.com/channels/1417/field/2/last.json')
+        r = requests.get('http://api.thingspeak.com/channels/1417/field/2/last.json', timeout=2)
         col = r.json()['field2']
     except:
         col = " Error!"

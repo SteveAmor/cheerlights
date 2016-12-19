@@ -6,7 +6,7 @@ import scrollphat
 
 while True:
     try:
-        r = requests.get('http://api.thingspeak.com/channels/1417/field/1/last.json')
+        r = requests.get('http://api.thingspeak.com/channels/1417/field/1/last.json', timeout=2)
         col = r.json()['field1']
     except:
         col = "Error!"
