@@ -3,13 +3,19 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Cheerlights</title>
+    <link rel="shortcut icon" type="image/png">
   </head>
   <body>
     <script>
       setInterval(function() {
         // get cheerlights color from field2 with a webservice call
         $.getJSON('https://api.thingspeak.com/channels/1417/feed/last.json?callback=?', function (data) {
-        // if the field2 has data, update background color of the page
+          // if field1 has data, update the favicon color
+          if (data.field1) {
+            var favicon = document.querySelector('link[rel="shortcut icon"]');
+            favicon.setAttribute('href', data.field1+'.png');
+          }
+          // if field2 has data, update background color of the page
           if (data.field2) {
             $("body").css("background-color", data.field2);
           }
@@ -18,4 +24,3 @@
     </script>
   </body>
 </html>
-
