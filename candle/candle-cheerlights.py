@@ -10,6 +10,7 @@ def press(button):
     if(press.previousButton != button):
         press.previousButton = button
         subprocess.call(["irsend", "SEND_ONCE", "CANDLE", button])
+        subprocess.call(["irsend", "SEND_ONCE", "CANDLE", "BTN_3"]) # Mode - flicker on
 
 press("BTN_1") # Turn on
 time.sleep(1)
@@ -21,11 +22,7 @@ while True:
         r = requests.get('http://api.thingspeak.com/channels/1417/field/1/last.json', timeout=2)
         col = r.json()['field1']
     except:
-        if col == "white":
-            col = "red"
-        else:
-            col = "white"
-
+        pass
     if(col == "red"):
         press("KEY_1")
     elif(col == "green"):
@@ -47,4 +44,4 @@ while True:
     elif(col == "magenta"):
         press("KEY_12")
 
-    time.sleep(1)
+    time.sleep(5)
