@@ -10,3 +10,4 @@ Continuous updates for:
 - Web browser
 - Mood candles
 - RGB LED
+- Pygame
