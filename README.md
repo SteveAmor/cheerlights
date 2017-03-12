@@ -5,6 +5,7 @@ Continuous updates for:
 - Pimoroni blinkt
 - Pimoroni microdot phat
 - Pimoroni scroll phat
+- Pimoroni unicorn phat
 - Sense Hat
 - Web browser
 - Mood candles
