@@ -11,3 +11,4 @@ Continuous updates for:
 - Mood candles
 - RGB LED
 - Pygame
+- ESP8266-01 with neopixels
