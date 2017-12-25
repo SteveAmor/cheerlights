@@ -52,7 +52,7 @@ LIRCD_CONF=""
 LIRCMD_CONF=""
 ```
 
-##Hardware
+## Hardware
 
 * Raspberry Pi.
 * IR LED (5mm 940nm).
