@@ -52,6 +52,8 @@ LIRCD_CONF=""
 LIRCMD_CONF=""
 ```
 
+In ```/etc/lirc/lirc_options.conf``` change ```driver = devinput``` to ```driver = default```
+
 ## Hardware
 
 * Raspberry Pi.
